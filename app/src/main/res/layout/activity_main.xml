@@ -19,15 +19,18 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/txtBannerSuperior"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Texto superior" />
+            android:background="@color/constrast_data_premium"
+            android:padding="10dp"
+            android:text="Texto superior"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -40,15 +43,18 @@
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/txtBannerInferior"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="Texto Inferior" />
+            android:background="@color/constrast_data_premium"
+            android:padding="10dp"
+            android:text="Texto Inferior"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <ScrollView
@@ -75,8 +81,29 @@
                 android:id="@+id/txtTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="Juego de Ajedrez"
                 android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtNivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_top_xml"
+                android:text="Nivel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtNumNivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bottom_xml"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
         </LinearLayout>
     </ScrollView>
