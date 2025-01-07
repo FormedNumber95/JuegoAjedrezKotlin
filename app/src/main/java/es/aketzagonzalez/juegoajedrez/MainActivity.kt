@@ -1,7 +1,12 @@
 package es.aketzagonzalez.juegoajedrez
 
+import android.graphics.Point
 import android.os.Bundle
+import android.util.TypedValue
 import android.view.View
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TableRow
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,7 +25,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun hideMessage() {
-
+        var mensajeFin:LinearLayout=findViewById(R.id.llMensaje)
+        mensajeFin.visibility=View.INVISIBLE
     }
 
     private fun setSizeBoard() {

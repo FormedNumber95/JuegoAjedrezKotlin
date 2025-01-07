@@ -924,7 +924,7 @@
                     android:layout_marginBottom="30dp"
                     android:src="@drawable/compartir"
                     android:background="@drawable/bg_bottom_xml"
-                    >
+                    />
 
             </LinearLayout>
 
