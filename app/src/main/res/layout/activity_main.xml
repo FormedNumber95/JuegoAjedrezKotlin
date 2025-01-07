@@ -75,7 +75,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_margin="4dp"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txtTitulo"
@@ -167,7 +168,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_bottom_xml"
-                        android:text="0"
+                        android:text="00:00"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -184,7 +185,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bg_top_xml"
+                        android:background="@drawable/bg_top_vidas_xml"
                         android:text="Vidas"
                         android:textAlignment="center"
                         android:textColor="@color/white"
@@ -194,7 +195,7 @@
                         android:id="@+id/textView13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/bg_bottom_xml"
+                        android:background="@drawable/bg_bottom_vidas_xml"
                         android:text="0"
                         android:textAlignment="center"
                         android:textColor="@color/white"
