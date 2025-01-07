@@ -11,6 +11,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        iniciarJuego()
+    }
+
+    private fun iniciarJuego() {
+        setSizeBoard()
+        hideMessage()
+    }
+
+    private fun hideMessage() {
+
+    }
+
+    private fun setSizeBoard() {
+
     }
 
     fun checkCellCLicked(view: View) {
