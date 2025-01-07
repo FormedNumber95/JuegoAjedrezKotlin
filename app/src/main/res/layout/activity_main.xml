@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/constrast_data_premium"
+            android:fontFamily="@font/ubunt_light"
             android:padding="10dp"
             android:text="Texto superior"
             android:textAlignment="center"
@@ -50,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:fontFamily="@font/ubunt_light"
             android:background="@color/constrast_data_premium"
             android:padding="10dp"
             android:text="Texto Inferior"
@@ -82,6 +84,7 @@
                 android:id="@+id/txtTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/ubunt_light"
                 android:padding="10dp"
                 android:text="Juego de Ajedrez"
                 android:textAlignment="center"
@@ -92,6 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_top_xml"
+                android:fontFamily="@font/ubunt_light"
                 android:text="Nivel"
                 android:textAlignment="center"
                 android:textColor="@color/white"
@@ -101,6 +105,7 @@
                 android:id="@+id/txtNumNivel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/ubunt_light"
                 android:background="@drawable/bg_bottom_xml"
                 android:text="0"
                 android:textAlignment="center"
@@ -130,6 +135,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_top_xml"
                         android:text="Moves"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -140,6 +146,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_bottom_xml"
                         android:text="0"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -159,6 +166,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_top_xml"
                         android:text="Tiempo"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -169,6 +177,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_bottom_xml"
                         android:text="00:00"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -187,6 +196,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_top_vidas_xml"
                         android:text="Vidas"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -197,6 +207,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_bottom_vidas_xml"
                         android:text="0"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -216,6 +227,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_top_xml"
                         android:text="Opciones"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -226,6 +238,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_bottom_xml"
                         android:text="0"
+                        android:fontFamily="@font/ubunt_light"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -846,7 +859,48 @@
                     </TableRow>
             </TableLayout>
 
-            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/llMensaje"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:background="@color/msg_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvIntroVidas"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ubunt_light"
+                    android:layout_marginTop="20dp"
+                    android:textSize="45sp"
+                    android:shadowRadius="8"
+                    android:shadowColor="@color/black"
+                    android:textColor="@color/black"
+                    android:text="1 vida"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvIntroMarcador"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/ubunt_light"
+                    android:layout_marginTop="40dp"
+                    android:textSize="70sp"
+                    android:shadowRadius="8"
+                    android:shadowColor="@color/black"
+                    android:textColor="@color/black"
+                    android:text="1 vida"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>
