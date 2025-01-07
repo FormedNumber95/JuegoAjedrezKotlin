@@ -10,26 +10,65 @@
 
 
     <LinearLayout
-        android:layout_width="272dp"
-        android:layout_height="158dp"
+        android:id="@+id/linearSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:padding="10dp">
 
+        <TextView
+            android:id="@+id/txtBannerSuperior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Texto superior" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="159dp"
+        android:id="@+id/linearInferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtBannerInferior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Texto Inferior" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/mapaAjedrez"
+        android:layout_width="263dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/linearInferior"
+        android:layout_below="@+id/linearSuperior"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/fondo_app"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
 </RelativeLayout>
